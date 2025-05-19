@@ -1,7 +1,10 @@
 SRC += muse.c
-SRC += features/caps_word.c
 
-RGBLIGHT_ENABLE = no
-ENCODER_ENABLE = no
+CAPS_WORD_ENABLE = yes
+# Conflicts with caps word
+COMMAND_ENABLE = no
+
 DIP_SWITCH_ENABLE = no
+ENCODER_ENABLE = no
 MOUSEKEY_ENABLE = no
+RGBLIGHT_ENABLE = no
